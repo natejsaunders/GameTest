@@ -1,1 +1,2 @@
-"save_file":"saves"
+"save_location":"saves/"
+"char_info_location":"characters/"

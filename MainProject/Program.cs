@@ -1,18 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace MainProject
 {
     internal class Program
     {
-
-        public Settings settings;
         static void Main(string[] args)
         {
-            Settings settings = new Settings();
+            Settings.loadSettings();
+
+            Person test = Person.loadFromFile("TestCharacter.txt");
+            Person ts = Person.loadFromFile("TommyShelby.txt");
+
+            test.printInfo();
+            ts.printInfo();
         }
     }
 }
